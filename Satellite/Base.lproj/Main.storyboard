@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Satellite" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nzm-wK-iEU">
+                                <rect key="frame" x="60" y="76" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gvq-yV-g2R"/>
+                                    <constraint firstAttribute="width" constant="200" id="nE1-Tm-RWJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Satellite Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jm-O8-mVd">
+                                <rect key="frame" x="87" y="344" width="147" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGP-yN-pYx">
+                                <rect key="frame" x="16" y="506" width="288" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="100-1000 mph" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LfT-vb-y40">
+                                <rect key="frame" x="105" y="394" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ShJ-fT-I37"/>
+                                    <constraint firstAttribute="width" constant="110" id="qLA-5N-mDW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10-50 miles" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnZ-zJ-d2U">
+                                <rect key="frame" x="105" y="432" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sjb-xT-sKf"/>
+                                    <constraint firstAttribute="width" constant="110" id="vj4-Z4-b5W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-SL-hmq">
+                                <rect key="frame" x="118" y="477" width="84" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Configure!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="configure:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6qZ-Sh-jaO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="satellite.gif" translatesAutoresizingMaskIntoConstraints="NO" id="D2W-VX-cIW">
+                                <rect key="frame" x="140" y="42" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-t3-7lU">
+                                <rect key="frame" x="61" y="402" width="36" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elevation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jO0-C6-jJs">
+                                <rect key="frame" x="46" y="440" width="51" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tnZ-zJ-d2U" firstAttribute="leading" secondItem="jO0-C6-jJs" secondAttribute="trailing" constant="8" id="1rg-Te-P3P"/>
+                            <constraint firstItem="LfT-vb-y40" firstAttribute="top" secondItem="5Jm-O8-mVd" secondAttribute="bottom" constant="23" id="2oW-tL-g3W"/>
+                            <constraint firstItem="LfT-vb-y40" firstAttribute="top" secondItem="5Jm-O8-mVd" secondAttribute="bottom" constant="23" id="4Fb-Ie-eYR"/>
+                            <constraint firstAttribute="centerX" secondItem="bG6-SL-hmq" secondAttribute="centerX" id="7a8-bC-OsN"/>
+                            <constraint firstItem="nzm-wK-iEU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="CZB-mq-tAi"/>
+                            <constraint firstAttribute="centerX" secondItem="tnZ-zJ-d2U" secondAttribute="centerX" id="KAY-DI-I0A"/>
+                            <constraint firstItem="bG6-SL-hmq" firstAttribute="top" secondItem="tnZ-zJ-d2U" secondAttribute="bottom" constant="15" id="Kgg-do-hKL"/>
+                            <constraint firstItem="sTQ-t3-7lU" firstAttribute="centerY" secondItem="LfT-vb-y40" secondAttribute="centerY" id="MON-rR-Wo4"/>
+                            <constraint firstItem="tnZ-zJ-d2U" firstAttribute="top" secondItem="LfT-vb-y40" secondAttribute="bottom" constant="8" id="R80-UU-hZi"/>
+                            <constraint firstItem="jO0-C6-jJs" firstAttribute="centerY" secondItem="tnZ-zJ-d2U" secondAttribute="centerY" id="XW0-iH-QIX"/>
+                            <constraint firstAttribute="centerX" secondItem="nzm-wK-iEU" secondAttribute="centerX" id="lR8-GN-plY"/>
+                            <constraint firstItem="LfT-vb-y40" firstAttribute="leading" secondItem="sTQ-t3-7lU" secondAttribute="trailing" constant="8" id="nNt-dH-30M"/>
+                            <constraint firstAttribute="centerX" secondItem="5Jm-O8-mVd" secondAttribute="centerX" id="naH-4V-LN8"/>
+                            <constraint firstAttribute="centerX" secondItem="LfT-vb-y40" secondAttribute="centerX" id="q1W-1L-prq"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bG6-SL-hmq" secondAttribute="bottom" constant="60" id="xfR-Hz-c1R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2oW-tL-g3W"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="earth" destination="nzm-wK-iEU" id="pXR-vQ-d8X"/>
+                        <outlet property="elevation" destination="tnZ-zJ-d2U" id="O4e-3z-Pyg"/>
+                        <outlet property="errorBox" destination="bGP-yN-pYx" id="mYb-al-PMt"/>
+                        <outlet property="satellite" destination="D2W-VX-cIW" id="tGT-1J-tkC"/>
+                        <outlet property="speed" destination="LfT-vb-y40" id="ckh-wo-ogh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="243"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth.jpg" width="1200" height="1200"/>
+        <image name="satellite.gif" width="200" height="153"/>
+    </resources>
+</document>
